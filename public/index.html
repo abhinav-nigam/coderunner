@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Java Code Runner</title>
+    <script src="jquery.js"></script>
+    <script src="jquery.soap.js"></script>
+    <script src="jquery.xmltojson.js"></script>
+    <script src="controller.js"></script>
+
+</head>
+
+<body>
+<div>
+    The class "ClassToRun" will be the public class of your code run, and should have main method. You can write methods you want to test in it as well as create private classes.<br/>
+    The maximum allowed time for the code compile/run is 1 minute. If your code doesn't compile or run in that time, the server will stop processing.<br/>
+    If the code compiles and there are no runtime errors, output to STDOUT will be displayed as output of the run.<br/>
+    <form id='codeForm'>
+        <textarea id="code" rows="15" cols ="150" required>public class ClassToRun{
+
+}
+        </textarea><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+</div><br/><br/>
+<div>Output Area <br/><textarea id="output" readonly rows="5" cols ="150"></textarea></div><br/>
+<div>Error Area <br/><textarea id="error" readonly rows="5" cols ="150"></textarea></div><br/>
+</body>
+</html>
