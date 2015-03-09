@@ -10,13 +10,12 @@ Prequisites
 	sudo apt-get install maven
 
 Steps to run
-      1.   Extract the submitted zip and move to code directory.
-      2.   Run mvn clean install inside the directory. This command might take some time as maven downloads all the project dependencies.
+      1.   Extract the submitted zip and move to code directory.   
+      2.   Run mvn clean install inside the directory. This command might take some time as maven downloads all the project dependencies.   
       3. Run logserver using the log4j-server.xml file. The command for this is:
          java -cp <path to log4j.jar> org.apache.log4j.net.SimpleSocketServer <port>  src/main/resources/log4j-server.properties
 	 On Ubuntu, this will look like:
-         java -cp  ~/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar org.apache.log4j.net.SimpleSocketServer 4712 src/main/resources/log4j-server.properties
-
+         java -cp  ~/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar org.apache.log4j.net.SimpleSocketServer 4712 src/main/resources/log4j-server.properties   
       4.   Run mvn spring-boot:run to start the application. You might see some ASCII art on the console. You can also check the logs in log/coderunner-info.log.
       5.   Open a browser and go to page http://localhost:8080. You should find the coderunner application.
 
